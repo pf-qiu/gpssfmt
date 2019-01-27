@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+package GpssCluster;
+
+
+message Empty {
+}
+
+message AddRequest {
+    string Topic = 1;
+    string Brokers = 2;
+    int32 PartitionID = 3;
+    int64 Offset = 4;
+    int32 BatchTime = 5;
+    int32 BatchRow = 6;
+}
+
+message AddResponse {
+    string ID = 1;
+}
+
+message KafkaMessage {
+    bytes Payload = 1;
+    bytes Key = 2;
+}
+
+message KafkaMessages {
+    repeated KafkaMessage Messages = 1;
+}
+
+message OffsetResponse {
+    int64 Offset = 1;
+}
+
+message StartRequest {
+    string ID = 1;
+    int32 MaxTime = 2;
+    int64 Rows = 3;
+}
+
+message StopRequest {
+    string ID = 1;
+}
+
+message DeleteRequest {
+    string ID = 1;
+}
+
+message ConsumeRequest {
+    string ID = 1;
+}
+
+message OffsetRequest {
+    string ID = 1;
+}
+
+service KafkaWorker {
+    rpc Add(AddRequest) returns(AddResponse) {}
+    rpc Start(StartRequest) returns(Empty) {}
+    rpc Stop(StopRequest) returns(Empty) {}
+    rpc Delete(DeleteRequest) returns(Empty) {}
+    rpc Consume(ConsumeRequest) returns(stream KafkaMessages) {}
+    rpc Offset(OffsetRequest) returns(OffsetResponse) {}
+}
