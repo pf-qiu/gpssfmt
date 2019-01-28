@@ -20,35 +20,19 @@ int parse_config(const char* jsonstr, int segid, config_info* info)
 	if (!config.IsObject())
 		return 1;
 
-	if (!config.HasMember("workers"))
+	const auto& obj = config.GetObject();
+	if (obj.MemberCount() == 0)
+		return 1;
+	auto it = obj.MemberBegin() + (segid % obj.MemberCount());
+
+	if (!it->name.IsString())
 		return 1;
 
-	{
-		const Value& v = config["workers"];
-		if (!v.IsArray())
-			return 1;
-		const auto& arr = v.GetArray();
-		if (arr.Size() == 0)
-			return 1;
+	if (!it->value.IsString())
+		return 1;
 
-		int index = segid % arr.Size();
-		const Value& w = arr[index];
-		const char* worker = w.GetString();
-		info->len_worker = strlen(worker);
-	}
-
-	{
-		if (!config.HasMember("id"))
-			return 1;
-
-		const Value& v = config["id"];
-		if (!v.IsString())
-			return 1;
-
-		const char* id = v.GetString();
-		info->len_id = strlen(id);
-	}
-
+	info->len_worker = it->value.GetStringLength();
+	info->len_id = it->name.GetStringLength();
 	return 0;
 }
 
@@ -56,11 +40,10 @@ void fill_config(const char* jsonstr, int segid, config_data* data)
 {
 	Document config;
 	config.Parse(jsonstr);
-	const auto& workers = config["workers"].GetArray();
-	const char* worker = workers[segid % workers.Size()].GetString();
-	strcpy(data->worker, worker);
-	const char* id = config["id"].GetString();
-	strcpy(data->id, id);
+	const auto& obj = config.GetObject();
+	auto it = obj.MemberBegin() + (segid % obj.MemberCount());
+	strcpy(data->worker, it->value.GetString());
+	strcpy(data->id, it->name.GetString());
 }
 
 using namespace std;

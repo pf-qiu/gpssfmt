@@ -32,6 +32,7 @@ struct KafkaStream
 		offset(offset),
 		rk(nullptr),
 		rkt(nullptr),
+		last_err(RD_KAFKA_RESP_ERR_NO_ERROR),
 		running(0)
 	{
 
@@ -115,6 +116,7 @@ struct KafkaStream
 
 	rd_kafka_t* rk;
 	rd_kafka_topic_t* rkt;
+	rd_kafka_resp_err_t last_err;
 
 	mutex lock;
 	int running;
@@ -143,6 +145,7 @@ public:
 	virtual Status Add(ServerContext* context, const AddRequest* request, AddResponse* response)
 	{
 		string key = GetUniqueID(request->topic(), request->partitionid());
+		printf("New stream %s\n", key.c_str());
 		unique_lock<mutex> l(m);
 
 		if (streams.find(key) == streams.end())
@@ -186,6 +189,7 @@ public:
 	}
 	virtual Status Consume(ServerContext* context, const ConsumeRequest* request, ServerWriter<KafkaMessages>* writer)
 	{
+		printf("Consume: %s\n", request->id().c_str());
 		return FindAndExecute<ConsumeRequest, ServerWriter<KafkaMessages>, true>(request, writer, &KafkaStreamWorker::ConsumeInternal);
 	}
 	Status ConsumeInternal(MyStream ms, const ConsumeRequest* request, ServerWriter<KafkaMessages>* writer)
@@ -197,12 +201,13 @@ public:
 		}
 
 		ConsumeContext ctx;
-		while (ctx.last_err == 0)
+		while (ctx.last_err == 0 && ms->last_err == 0)
 		{
-			rd_kafka_consume_callback(ms->rkt, ms->partition, -1, [](rd_kafka_message_t* msg, void* p) {
+			rd_kafka_consume_callback(ms->rkt, ms->partition, 1000, [](rd_kafka_message_t* msg, void* p) {
 				auto ctx = static_cast<ConsumeContext*>(p);
 				if (msg->err != 0)
 				{
+					printf("set err: %d\n", msg->err);
 					ctx->last_err = msg->err;
 				}
 				else
@@ -210,13 +215,17 @@ public:
 					KafkaMessage* km = ctx->messages.add_messages();
 					km->set_key(msg->key, msg->key_len);
 					km->set_payload(msg->payload, msg->len);
-					ctx->count++;
 				}
 			}, &ctx);
+			printf("written %d messages\n", ctx.messages.messages_size());
+			ctx.count += ctx.messages.messages_size();
 			writer->Write(ctx.messages);
 			ctx.messages.clear_messages();
 		}
-		
+		printf("total %ld\n", ctx.count);
+		if (ctx.last_err != 0)
+			ms->last_err = ctx.last_err;
+
 		if (ctx.last_err == 0 || ctx.last_err == RD_KAFKA_RESP_ERR__PARTITION_EOF)
 		{
 			ms->ReaderFinish(ctx.count);

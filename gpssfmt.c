@@ -41,7 +41,7 @@ Datum gpss_worker_import(PG_FUNCTION_ARGS)
 		data.worker = palloc(info.len_worker + 1);
 		data.id = palloc(info.len_id + 1);
 		fill_config(json, segid, &data);
-		elog(DEBUG5, "worker: %s, id %s", data.worker, data.id);
+		elog(INFO, "worker: %s, id %s", data.worker, data.id);
 		
 		funcctx = SRF_FIRSTCALL_INIT();
 		worker = new_stream_worker();
@@ -77,6 +77,7 @@ Datum gpss_worker_import(PG_FUNCTION_ARGS)
 	if (code == -1)
 	{
 		delete_stream_worker(worker);
+		elog(INFO, "EOF %d", segid);
 		SRF_RETURN_DONE(funcctx);
 	}
 	if (code != 0)

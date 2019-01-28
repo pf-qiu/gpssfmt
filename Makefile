@@ -31,7 +31,7 @@ PG_CONFIG = pg_config
 PGXS := $(shell $(PG_CONFIG) --pgxs)
 include $(PGXS)
 
-server: stream.pb.o stream.grpc.pb.o server.o
+client: stream.pb.o stream.grpc.pb.o client.o
 	$(CXX) $^ $(MYLDFLAGS) -o $@
 
 worker: stream.pb.o stream.grpc.pb.o worker.o
