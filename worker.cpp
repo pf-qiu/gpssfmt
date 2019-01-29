@@ -128,12 +128,14 @@ struct ConsumeContext
 {
 	ConsumeContext() :
 		count(0),
-		last_err(RD_KAFKA_RESP_ERR_NO_ERROR)
+		last_err(RD_KAFKA_RESP_ERR_NO_ERROR),
+		writer(nullptr)
 	{
 	}
 	KafkaMessages messages;
 	int64 count;
 	rd_kafka_resp_err_t last_err;
+	ServerWriter<KafkaMessages>* writer;
 };
 
 class KafkaStreamWorker : public KafkaWorker::Service
@@ -201,9 +203,10 @@ public:
 		}
 
 		ConsumeContext ctx;
+		ctx.writer = writer;
 		while (ctx.last_err == 0 && ms->last_err == 0)
 		{
-			rd_kafka_consume_callback(ms->rkt, ms->partition, 1000, [](rd_kafka_message_t* msg, void* p) {
+			rd_kafka_consume_callback(ms->rkt, ms->partition, 100, [](rd_kafka_message_t* msg, void* p) {
 				auto ctx = static_cast<ConsumeContext*>(p);
 				if (msg->err != 0)
 				{
@@ -215,14 +218,19 @@ public:
 					KafkaMessage* km = ctx->messages.add_messages();
 					km->set_key(msg->key, msg->key_len);
 					km->set_payload(msg->payload, msg->len);
+					if (ctx->messages.messages_size() >= 1000)
+					{
+						ctx->writer->Write(ctx->messages);
+						ctx->count += ctx->messages.messages_size();
+						ctx->messages.clear_messages();
+					}	
 				}
 			}, &ctx);
-			printf("written %d messages\n", ctx.messages.messages_size());
 			ctx.count += ctx.messages.messages_size();
 			writer->Write(ctx.messages);
 			ctx.messages.clear_messages();
 		}
-		printf("total %ld\n", ctx.count);
+		printf("Finished at offset %ld\n", ms->offset);
 		if (ctx.last_err != 0)
 			ms->last_err = ctx.last_err;
 
