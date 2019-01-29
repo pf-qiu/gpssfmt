@@ -6,7 +6,7 @@
 #include <condition_variable>
 #include <atomic>
 #include <memory>
-
+#include <chrono>
 #include <librdkafka/rdkafka.h>
 
 #include <grpc/grpc.h>
@@ -81,8 +81,9 @@ struct KafkaStream
 	void WaitReaders()
 	{
 		unique_lock<mutex> l(lock);
+		std::chrono::seconds sec(1);
 		while(readers > 0)
-			cv.wait(l);
+			cv.wait_for(l, sec);
 	}
 
 	bool ReaderStart()
@@ -223,7 +224,7 @@ public:
 						ctx->writer->Write(ctx->messages);
 						ctx->count += ctx->messages.messages_size();
 						ctx->messages.clear_messages();
-					}	
+					}
 				}
 			}, &ctx);
 			ctx.count += ctx.messages.messages_size();
