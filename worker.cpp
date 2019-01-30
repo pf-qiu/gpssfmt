@@ -33,7 +33,8 @@ struct KafkaStream
 		rk(nullptr),
 		rkt(nullptr),
 		last_err(RD_KAFKA_RESP_ERR_NO_ERROR),
-		running(0)
+		running(0),
+		readers(0)
 	{
 
 	}

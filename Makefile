@@ -32,8 +32,8 @@ PGXS := $(shell $(PG_CONFIG) --pgxs)
 include $(PGXS)
 
 client: stream.pb.o stream.grpc.pb.o client.o
-	$(CXX) $^ $(MYLDFLAGS) -o $@
+	$(CXX) $(CFLAGS) $^ $(MYLDFLAGS) -o $@
 
 worker: stream.pb.o stream.grpc.pb.o worker.o
-	$(CXX) $^ $(MYLDFLAGS) -o $@ -lrdkafka
+	$(CXX) $(CFLAGS) $^ $(MYLDFLAGS) -o $@ -lrdkafka
 
