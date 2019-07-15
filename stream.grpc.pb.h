@@ -85,11 +85,16 @@ class KafkaWorker final {
      public:
       virtual ~experimental_async_interface() {}
       virtual void Add(::grpc::ClientContext* context, const ::GpssCluster::AddRequest* request, ::GpssCluster::AddResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void Add(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::GpssCluster::AddResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void Start(::grpc::ClientContext* context, const ::GpssCluster::StartRequest* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void Start(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)>) = 0;
       virtual void Stop(::grpc::ClientContext* context, const ::GpssCluster::StopRequest* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void Stop(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)>) = 0;
       virtual void Delete(::grpc::ClientContext* context, const ::GpssCluster::DeleteRequest* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void Delete(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)>) = 0;
       virtual void Consume(::grpc::ClientContext* context, ::GpssCluster::ConsumeRequest* request, ::grpc::experimental::ClientReadReactor< ::GpssCluster::KafkaMessages>* reactor) = 0;
       virtual void Offset(::grpc::ClientContext* context, const ::GpssCluster::OffsetRequest* request, ::GpssCluster::OffsetResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void Offset(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::GpssCluster::OffsetResponse* response, std::function<void(::grpc::Status)>) = 0;
     };
     virtual class experimental_async_interface* experimental_async() { return nullptr; }
   private:
@@ -158,11 +163,16 @@ class KafkaWorker final {
       public StubInterface::experimental_async_interface {
      public:
       void Add(::grpc::ClientContext* context, const ::GpssCluster::AddRequest* request, ::GpssCluster::AddResponse* response, std::function<void(::grpc::Status)>) override;
+      void Add(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::GpssCluster::AddResponse* response, std::function<void(::grpc::Status)>) override;
       void Start(::grpc::ClientContext* context, const ::GpssCluster::StartRequest* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)>) override;
+      void Start(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)>) override;
       void Stop(::grpc::ClientContext* context, const ::GpssCluster::StopRequest* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)>) override;
+      void Stop(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)>) override;
       void Delete(::grpc::ClientContext* context, const ::GpssCluster::DeleteRequest* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)>) override;
+      void Delete(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)>) override;
       void Consume(::grpc::ClientContext* context, ::GpssCluster::ConsumeRequest* request, ::grpc::experimental::ClientReadReactor< ::GpssCluster::KafkaMessages>* reactor) override;
       void Offset(::grpc::ClientContext* context, const ::GpssCluster::OffsetRequest* request, ::GpssCluster::OffsetResponse* response, std::function<void(::grpc::Status)>) override;
+      void Offset(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::GpssCluster::OffsetResponse* response, std::function<void(::grpc::Status)>) override;
      private:
       friend class Stub;
       explicit experimental_async(Stub* stub): stub_(stub) { }

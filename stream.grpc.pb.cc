@@ -50,6 +50,10 @@ void KafkaWorker::Stub::experimental_async::Add(::grpc::ClientContext* context, 
   return ::grpc::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_Add_, context, request, response, std::move(f));
 }
 
+void KafkaWorker::Stub::experimental_async::Add(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::GpssCluster::AddResponse* response, std::function<void(::grpc::Status)> f) {
+  return ::grpc::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_Add_, context, request, response, std::move(f));
+}
+
 ::grpc::ClientAsyncResponseReader< ::GpssCluster::AddResponse>* KafkaWorker::Stub::AsyncAddRaw(::grpc::ClientContext* context, const ::GpssCluster::AddRequest& request, ::grpc::CompletionQueue* cq) {
   return ::grpc::internal::ClientAsyncResponseReaderFactory< ::GpssCluster::AddResponse>::Create(channel_.get(), cq, rpcmethod_Add_, context, request, true);
 }
@@ -63,6 +67,10 @@ void KafkaWorker::Stub::experimental_async::Add(::grpc::ClientContext* context, 
 }
 
 void KafkaWorker::Stub::experimental_async::Start(::grpc::ClientContext* context, const ::GpssCluster::StartRequest* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)> f) {
+  return ::grpc::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_Start_, context, request, response, std::move(f));
+}
+
+void KafkaWorker::Stub::experimental_async::Start(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)> f) {
   return ::grpc::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_Start_, context, request, response, std::move(f));
 }
 
@@ -82,6 +90,10 @@ void KafkaWorker::Stub::experimental_async::Stop(::grpc::ClientContext* context,
   return ::grpc::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_Stop_, context, request, response, std::move(f));
 }
 
+void KafkaWorker::Stub::experimental_async::Stop(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)> f) {
+  return ::grpc::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_Stop_, context, request, response, std::move(f));
+}
+
 ::grpc::ClientAsyncResponseReader< ::GpssCluster::Empty>* KafkaWorker::Stub::AsyncStopRaw(::grpc::ClientContext* context, const ::GpssCluster::StopRequest& request, ::grpc::CompletionQueue* cq) {
   return ::grpc::internal::ClientAsyncResponseReaderFactory< ::GpssCluster::Empty>::Create(channel_.get(), cq, rpcmethod_Stop_, context, request, true);
 }
@@ -95,6 +107,10 @@ void KafkaWorker::Stub::experimental_async::Stop(::grpc::ClientContext* context,
 }
 
 void KafkaWorker::Stub::experimental_async::Delete(::grpc::ClientContext* context, const ::GpssCluster::DeleteRequest* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)> f) {
+  return ::grpc::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_Delete_, context, request, response, std::move(f));
+}
+
+void KafkaWorker::Stub::experimental_async::Delete(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::GpssCluster::Empty* response, std::function<void(::grpc::Status)> f) {
   return ::grpc::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_Delete_, context, request, response, std::move(f));
 }
 
@@ -127,6 +143,10 @@ void KafkaWorker::Stub::experimental_async::Consume(::grpc::ClientContext* conte
 }
 
 void KafkaWorker::Stub::experimental_async::Offset(::grpc::ClientContext* context, const ::GpssCluster::OffsetRequest* request, ::GpssCluster::OffsetResponse* response, std::function<void(::grpc::Status)> f) {
+  return ::grpc::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_Offset_, context, request, response, std::move(f));
+}
+
+void KafkaWorker::Stub::experimental_async::Offset(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::GpssCluster::OffsetResponse* response, std::function<void(::grpc::Status)> f) {
   return ::grpc::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_Offset_, context, request, response, std::move(f));
 }
 

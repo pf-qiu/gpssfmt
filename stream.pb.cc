@@ -6,81 +6,64 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_stream_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_stream_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_KafkaMessage;
-}  // namespace protobuf_stream_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_stream_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_KafkaMessage_stream_2eproto;
 namespace GpssCluster {
 class EmptyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<Empty>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<Empty> _instance;
 } _Empty_default_instance_;
 class AddRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<AddRequest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<AddRequest> _instance;
 } _AddRequest_default_instance_;
 class AddResponseDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<AddResponse>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<AddResponse> _instance;
 } _AddResponse_default_instance_;
 class KafkaMessageDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<KafkaMessage>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<KafkaMessage> _instance;
 } _KafkaMessage_default_instance_;
 class KafkaMessagesDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<KafkaMessages>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<KafkaMessages> _instance;
 } _KafkaMessages_default_instance_;
 class OffsetResponseDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OffsetResponse>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OffsetResponse> _instance;
 } _OffsetResponse_default_instance_;
 class StartRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StartRequest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StartRequest> _instance;
 } _StartRequest_default_instance_;
 class StopRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StopRequest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StopRequest> _instance;
 } _StopRequest_default_instance_;
 class DeleteRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<DeleteRequest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<DeleteRequest> _instance;
 } _DeleteRequest_default_instance_;
 class ConsumeRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ConsumeRequest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<ConsumeRequest> _instance;
 } _ConsumeRequest_default_instance_;
 class OffsetRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OffsetRequest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OffsetRequest> _instance;
 } _OffsetRequest_default_instance_;
 }  // namespace GpssCluster
-namespace protobuf_stream_2eproto {
-static void InitDefaultsEmpty() {
+static void InitDefaultsEmpty_stream_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -91,10 +74,10 @@ static void InitDefaultsEmpty() {
   ::GpssCluster::Empty::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_Empty =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEmpty}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_Empty_stream_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEmpty_stream_2eproto}, {}};
 
-static void InitDefaultsAddRequest() {
+static void InitDefaultsAddRequest_stream_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -105,10 +88,10 @@ static void InitDefaultsAddRequest() {
   ::GpssCluster::AddRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_AddRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAddRequest}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_AddRequest_stream_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAddRequest_stream_2eproto}, {}};
 
-static void InitDefaultsAddResponse() {
+static void InitDefaultsAddResponse_stream_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -119,10 +102,10 @@ static void InitDefaultsAddResponse() {
   ::GpssCluster::AddResponse::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_AddResponse =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAddResponse}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_AddResponse_stream_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAddResponse_stream_2eproto}, {}};
 
-static void InitDefaultsKafkaMessage() {
+static void InitDefaultsKafkaMessage_stream_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -133,10 +116,10 @@ static void InitDefaultsKafkaMessage() {
   ::GpssCluster::KafkaMessage::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_KafkaMessage =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsKafkaMessage}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_KafkaMessage_stream_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsKafkaMessage_stream_2eproto}, {}};
 
-static void InitDefaultsKafkaMessages() {
+static void InitDefaultsKafkaMessages_stream_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -147,11 +130,11 @@ static void InitDefaultsKafkaMessages() {
   ::GpssCluster::KafkaMessages::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_KafkaMessages =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsKafkaMessages}, {
-      &protobuf_stream_2eproto::scc_info_KafkaMessage.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_KafkaMessages_stream_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsKafkaMessages_stream_2eproto}, {
+      &scc_info_KafkaMessage_stream_2eproto.base,}};
 
-static void InitDefaultsOffsetResponse() {
+static void InitDefaultsOffsetResponse_stream_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -162,10 +145,10 @@ static void InitDefaultsOffsetResponse() {
   ::GpssCluster::OffsetResponse::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_OffsetResponse =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOffsetResponse}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_OffsetResponse_stream_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOffsetResponse_stream_2eproto}, {}};
 
-static void InitDefaultsStartRequest() {
+static void InitDefaultsStartRequest_stream_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -176,10 +159,10 @@ static void InitDefaultsStartRequest() {
   ::GpssCluster::StartRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_StartRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStartRequest}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_StartRequest_stream_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStartRequest_stream_2eproto}, {}};
 
-static void InitDefaultsStopRequest() {
+static void InitDefaultsStopRequest_stream_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -190,10 +173,10 @@ static void InitDefaultsStopRequest() {
   ::GpssCluster::StopRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_StopRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStopRequest}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_StopRequest_stream_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStopRequest_stream_2eproto}, {}};
 
-static void InitDefaultsDeleteRequest() {
+static void InitDefaultsDeleteRequest_stream_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -204,10 +187,10 @@ static void InitDefaultsDeleteRequest() {
   ::GpssCluster::DeleteRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_DeleteRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsDeleteRequest}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_DeleteRequest_stream_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsDeleteRequest_stream_2eproto}, {}};
 
-static void InitDefaultsConsumeRequest() {
+static void InitDefaultsConsumeRequest_stream_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -218,10 +201,10 @@ static void InitDefaultsConsumeRequest() {
   ::GpssCluster::ConsumeRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_ConsumeRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsConsumeRequest}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_ConsumeRequest_stream_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsConsumeRequest_stream_2eproto}, {}};
 
-static void InitDefaultsOffsetRequest() {
+static void InitDefaultsOffsetRequest_stream_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -232,101 +215,103 @@ static void InitDefaultsOffsetRequest() {
   ::GpssCluster::OffsetRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_OffsetRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOffsetRequest}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_OffsetRequest_stream_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOffsetRequest_stream_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_Empty.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_AddRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_AddResponse.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_KafkaMessage.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_KafkaMessages.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OffsetResponse.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StartRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StopRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_DeleteRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_ConsumeRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OffsetRequest.base);
+void InitDefaults_stream_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_Empty_stream_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AddRequest_stream_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AddResponse_stream_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_KafkaMessage_stream_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_KafkaMessages_stream_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OffsetResponse_stream_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StartRequest_stream_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StopRequest_stream_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_DeleteRequest_stream_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ConsumeRequest_stream_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OffsetRequest_stream_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[11];
+::google::protobuf::Metadata file_level_metadata_stream_2eproto[11];
+constexpr ::google::protobuf::EnumDescriptor const** file_level_enum_descriptors_stream_2eproto = nullptr;
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_stream_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+const ::google::protobuf::uint32 TableStruct_stream_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::Empty, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::Empty, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::AddRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::AddRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::AddRequest, topic_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::AddRequest, brokers_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::AddRequest, partitionid_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::AddRequest, offset_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::AddRequest, batchtime_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::AddRequest, batchrow_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::AddRequest, topic_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::AddRequest, brokers_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::AddRequest, partitionid_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::AddRequest, offset_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::AddRequest, batchtime_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::AddRequest, batchrow_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::AddResponse, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::AddResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::AddResponse, id_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::AddResponse, id_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::KafkaMessage, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::KafkaMessage, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::KafkaMessage, payload_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::KafkaMessage, key_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::KafkaMessage, payload_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::KafkaMessage, key_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::KafkaMessages, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::KafkaMessages, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::KafkaMessages, messages_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::KafkaMessages, messages_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::OffsetResponse, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::OffsetResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::OffsetResponse, offset_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::OffsetResponse, offset_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::StartRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::StartRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::StartRequest, id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::StartRequest, maxtime_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::StartRequest, rows_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::StartRequest, id_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::StartRequest, maxtime_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::StartRequest, rows_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::StopRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::StopRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::StopRequest, id_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::StopRequest, id_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::DeleteRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::DeleteRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::DeleteRequest, id_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::DeleteRequest, id_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::ConsumeRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::ConsumeRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::ConsumeRequest, id_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::ConsumeRequest, id_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::OffsetRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::OffsetRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::GpssCluster::OffsetRequest, id_),
+  PROTOBUF_FIELD_OFFSET(::GpssCluster::OffsetRequest, id_),
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::GpssCluster::Empty)},
   { 5, -1, sizeof(::GpssCluster::AddRequest)},
   { 16, -1, sizeof(::GpssCluster::AddResponse)},
@@ -354,87 +339,73 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::GpssCluster::_OffsetRequest_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "stream.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_stream_2eproto = {
+  {}, AddDescriptors_stream_2eproto, "stream.proto", schemas,
+  file_default_instances, TableStruct_stream_2eproto::offsets,
+  file_level_metadata_stream_2eproto, 11, file_level_enum_descriptors_stream_2eproto, file_level_service_descriptors_stream_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_stream_2eproto[] =
+  "\n\014stream.proto\022\013GpssCluster\"\007\n\005Empty\"v\n\n"
+  "AddRequest\022\r\n\005Topic\030\001 \001(\t\022\017\n\007Brokers\030\002 \001"
+  "(\t\022\023\n\013PartitionID\030\003 \001(\005\022\016\n\006Offset\030\004 \001(\003\022"
+  "\021\n\tBatchTime\030\005 \001(\005\022\020\n\010BatchRow\030\006 \001(\005\"\031\n\013"
+  "AddResponse\022\n\n\002ID\030\001 \001(\t\",\n\014KafkaMessage\022"
+  "\017\n\007Payload\030\001 \001(\014\022\013\n\003Key\030\002 \001(\014\"<\n\rKafkaMe"
+  "ssages\022+\n\010Messages\030\001 \003(\0132\031.GpssCluster.K"
+  "afkaMessage\" \n\016OffsetResponse\022\016\n\006Offset\030"
+  "\001 \001(\003\"9\n\014StartRequest\022\n\n\002ID\030\001 \001(\t\022\017\n\007Max"
+  "Time\030\002 \001(\005\022\014\n\004Rows\030\003 \001(\003\"\031\n\013StopRequest\022"
+  "\n\n\002ID\030\001 \001(\t\"\033\n\rDeleteRequest\022\n\n\002ID\030\001 \001(\t"
+  "\"\034\n\016ConsumeRequest\022\n\n\002ID\030\001 \001(\t\"\033\n\rOffset"
+  "Request\022\n\n\002ID\030\001 \001(\t2\204\003\n\013KafkaWorker\022:\n\003A"
+  "dd\022\027.GpssCluster.AddRequest\032\030.GpssCluste"
+  "r.AddResponse\"\000\0228\n\005Start\022\031.GpssCluster.S"
+  "tartRequest\032\022.GpssCluster.Empty\"\000\0226\n\004Sto"
+  "p\022\030.GpssCluster.StopRequest\032\022.GpssCluste"
+  "r.Empty\"\000\022:\n\006Delete\022\032.GpssCluster.Delete"
+  "Request\032\022.GpssCluster.Empty\"\000\022F\n\007Consume"
+  "\022\033.GpssCluster.ConsumeRequest\032\032.GpssClus"
+  "ter.KafkaMessages\"\0000\001\022C\n\006Offset\022\032.GpssCl"
+  "uster.OffsetRequest\032\033.GpssCluster.Offset"
+  "Response\"\000b\006proto3"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_stream_2eproto = {
+  false, InitDefaults_stream_2eproto, 
+  descriptor_table_protodef_stream_2eproto,
+  "stream.proto", &assign_descriptors_table_stream_2eproto, 898,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 11);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\014stream.proto\022\013GpssCluster\"\007\n\005Empty\"v\n\n"
-      "AddRequest\022\r\n\005Topic\030\001 \001(\t\022\017\n\007Brokers\030\002 \001"
-      "(\t\022\023\n\013PartitionID\030\003 \001(\005\022\016\n\006Offset\030\004 \001(\003\022"
-      "\021\n\tBatchTime\030\005 \001(\005\022\020\n\010BatchRow\030\006 \001(\005\"\031\n\013"
-      "AddResponse\022\n\n\002ID\030\001 \001(\t\",\n\014KafkaMessage\022"
-      "\017\n\007Payload\030\001 \001(\014\022\013\n\003Key\030\002 \001(\014\"<\n\rKafkaMe"
-      "ssages\022+\n\010Messages\030\001 \003(\0132\031.GpssCluster.K"
-      "afkaMessage\" \n\016OffsetResponse\022\016\n\006Offset\030"
-      "\001 \001(\003\"9\n\014StartRequest\022\n\n\002ID\030\001 \001(\t\022\017\n\007Max"
-      "Time\030\002 \001(\005\022\014\n\004Rows\030\003 \001(\003\"\031\n\013StopRequest\022"
-      "\n\n\002ID\030\001 \001(\t\"\033\n\rDeleteRequest\022\n\n\002ID\030\001 \001(\t"
-      "\"\034\n\016ConsumeRequest\022\n\n\002ID\030\001 \001(\t\"\033\n\rOffset"
-      "Request\022\n\n\002ID\030\001 \001(\t2\204\003\n\013KafkaWorker\022:\n\003A"
-      "dd\022\027.GpssCluster.AddRequest\032\030.GpssCluste"
-      "r.AddResponse\"\000\0228\n\005Start\022\031.GpssCluster.S"
-      "tartRequest\032\022.GpssCluster.Empty\"\000\0226\n\004Sto"
-      "p\022\030.GpssCluster.StopRequest\032\022.GpssCluste"
-      "r.Empty\"\000\022:\n\006Delete\022\032.GpssCluster.Delete"
-      "Request\032\022.GpssCluster.Empty\"\000\022F\n\007Consume"
-      "\022\033.GpssCluster.ConsumeRequest\032\032.GpssClus"
-      "ter.KafkaMessages\"\0000\001\022C\n\006Offset\022\032.GpssCl"
-      "uster.OffsetRequest\032\033.GpssCluster.Offset"
-      "Response\"\000b\006proto3"
+void AddDescriptors_stream_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 898);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "stream.proto", &protobuf_RegisterTypes);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_stream_2eproto, deps, 0);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_stream_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_stream_2eproto = []() { AddDescriptors_stream_2eproto(); return true; }();
 namespace GpssCluster {
 
 // ===================================================================
 
 void Empty::InitAsDefaultInstance() {
 }
+class Empty::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Empty::Empty()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_stream_2eproto::scc_info_Empty.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:GpssCluster.Empty)
 }
 Empty::Empty(const Empty& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:GpssCluster.Empty)
 }
@@ -453,13 +424,8 @@ void Empty::SharedDtor() {
 void Empty::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* Empty::descriptor() {
-  ::protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const Empty& Empty::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_stream_2eproto::scc_info_Empty.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_Empty_stream_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -473,9 +439,38 @@ void Empty::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* Empty::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<Empty*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      default: {
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool Empty::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:GpssCluster.Empty)
   for (;;) {
@@ -497,6 +492,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void Empty::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -504,23 +500,22 @@ void Empty::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:GpssCluster.Empty)
 }
 
 ::google::protobuf::uint8* Empty::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:GpssCluster.Empty)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GpssCluster.Empty)
   return target;
@@ -530,11 +525,15 @@ size_t Empty::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:GpssCluster.Empty)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -544,9 +543,9 @@ void Empty::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:GpssCluster.Empty)
   GOOGLE_DCHECK_NE(&from, this);
   const Empty* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Empty>(
+      ::google::protobuf::DynamicCastToGenerated<Empty>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:GpssCluster.Empty)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -592,8 +591,8 @@ void Empty::InternalSwap(Empty* other) {
 }
 
 ::google::protobuf::Metadata Empty::GetMetadata() const {
-  protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_stream_2eproto);
+  return ::file_level_metadata_stream_2eproto[kIndexInFileMessages];
 }
 
 
@@ -601,6 +600,10 @@ void Empty::InternalSwap(Empty* other) {
 
 void AddRequest::InitAsDefaultInstance() {
 }
+class AddRequest::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int AddRequest::kTopicFieldNumber;
 const int AddRequest::kBrokersFieldNumber;
@@ -611,15 +614,13 @@ const int AddRequest::kBatchRowFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 AddRequest::AddRequest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_stream_2eproto::scc_info_AddRequest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:GpssCluster.AddRequest)
 }
 AddRequest::AddRequest(const AddRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   topic_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.topic().size() > 0) {
@@ -636,6 +637,8 @@ AddRequest::AddRequest(const AddRequest& from)
 }
 
 void AddRequest::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_AddRequest_stream_2eproto.base);
   topic_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   brokers_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&offset_, 0, static_cast<size_t>(
@@ -656,13 +659,8 @@ void AddRequest::SharedDtor() {
 void AddRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* AddRequest::descriptor() {
-  ::protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const AddRequest& AddRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_stream_2eproto::scc_info_AddRequest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_AddRequest_stream_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -681,9 +679,106 @@ void AddRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* AddRequest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<AddRequest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // string Topic = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("GpssCluster.AddRequest.Topic");
+        object = msg->mutable_topic();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // string Brokers = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("GpssCluster.AddRequest.Brokers");
+        object = msg->mutable_brokers();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // int32 PartitionID = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_partitionid(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // int64 Offset = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_offset(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // int32 BatchTime = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_batchtime(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // int32 BatchRow = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_batchrow(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool AddRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:GpssCluster.AddRequest)
   for (;;) {
@@ -693,8 +788,7 @@ bool AddRequest::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // string Topic = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_topic()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -709,8 +803,7 @@ bool AddRequest::MergePartialFromCodedStream(
 
       // string Brokers = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_brokers()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -725,8 +818,7 @@ bool AddRequest::MergePartialFromCodedStream(
 
       // int32 PartitionID = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -739,8 +831,7 @@ bool AddRequest::MergePartialFromCodedStream(
 
       // int64 Offset = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -753,8 +844,7 @@ bool AddRequest::MergePartialFromCodedStream(
 
       // int32 BatchTime = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -767,8 +857,7 @@ bool AddRequest::MergePartialFromCodedStream(
 
       // int32 BatchRow = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -798,6 +887,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void AddRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -845,16 +935,15 @@ void AddRequest::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(6, this->batchrow(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:GpssCluster.AddRequest)
 }
 
 ::google::protobuf::uint8* AddRequest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:GpssCluster.AddRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -901,9 +990,9 @@ void AddRequest::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(6, this->batchrow(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GpssCluster.AddRequest)
   return target;
@@ -913,11 +1002,15 @@ size_t AddRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:GpssCluster.AddRequest)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // string Topic = 1;
   if (this->topic().size() > 0) {
     total_size += 1 +
@@ -969,9 +1062,9 @@ void AddRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:GpssCluster.AddRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const AddRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const AddRequest>(
+      ::google::protobuf::DynamicCastToGenerated<AddRequest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:GpssCluster.AddRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1033,6 +1126,7 @@ void AddRequest::Swap(AddRequest* other) {
 }
 void AddRequest::InternalSwap(AddRequest* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   topic_.Swap(&other->topic_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   brokers_.Swap(&other->brokers_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -1041,12 +1135,11 @@ void AddRequest::InternalSwap(AddRequest* other) {
   swap(partitionid_, other->partitionid_);
   swap(batchtime_, other->batchtime_);
   swap(batchrow_, other->batchrow_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata AddRequest::GetMetadata() const {
-  protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_stream_2eproto);
+  return ::file_level_metadata_stream_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1054,20 +1147,22 @@ void AddRequest::InternalSwap(AddRequest* other) {
 
 void AddResponse::InitAsDefaultInstance() {
 }
+class AddResponse::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int AddResponse::kIDFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 AddResponse::AddResponse()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_stream_2eproto::scc_info_AddResponse.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:GpssCluster.AddResponse)
 }
 AddResponse::AddResponse(const AddResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.id().size() > 0) {
@@ -1077,6 +1172,8 @@ AddResponse::AddResponse(const AddResponse& from)
 }
 
 void AddResponse::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_AddResponse_stream_2eproto.base);
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1092,13 +1189,8 @@ void AddResponse::SharedDtor() {
 void AddResponse::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* AddResponse::descriptor() {
-  ::protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const AddResponse& AddResponse::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_stream_2eproto::scc_info_AddResponse.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_AddResponse_stream_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1113,9 +1205,62 @@ void AddResponse::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* AddResponse::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<AddResponse*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // string ID = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("GpssCluster.AddResponse.ID");
+        object = msg->mutable_id();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool AddResponse::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:GpssCluster.AddResponse)
   for (;;) {
@@ -1125,8 +1270,7 @@ bool AddResponse::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // string ID = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1158,6 +1302,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void AddResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1175,16 +1320,15 @@ void AddResponse::SerializeWithCachedSizes(
       1, this->id(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:GpssCluster.AddResponse)
 }
 
 ::google::protobuf::uint8* AddResponse::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:GpssCluster.AddResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1200,9 +1344,9 @@ void AddResponse::SerializeWithCachedSizes(
         1, this->id(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GpssCluster.AddResponse)
   return target;
@@ -1212,11 +1356,15 @@ size_t AddResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:GpssCluster.AddResponse)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // string ID = 1;
   if (this->id().size() > 0) {
     total_size += 1 +
@@ -1233,9 +1381,9 @@ void AddResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:GpssCluster.AddResponse)
   GOOGLE_DCHECK_NE(&from, this);
   const AddResponse* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const AddResponse>(
+      ::google::protobuf::DynamicCastToGenerated<AddResponse>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:GpssCluster.AddResponse)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1281,14 +1429,14 @@ void AddResponse::Swap(AddResponse* other) {
 }
 void AddResponse::InternalSwap(AddResponse* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   id_.Swap(&other->id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata AddResponse::GetMetadata() const {
-  protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_stream_2eproto);
+  return ::file_level_metadata_stream_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1296,21 +1444,23 @@ void AddResponse::InternalSwap(AddResponse* other) {
 
 void KafkaMessage::InitAsDefaultInstance() {
 }
+class KafkaMessage::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int KafkaMessage::kPayloadFieldNumber;
 const int KafkaMessage::kKeyFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 KafkaMessage::KafkaMessage()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_stream_2eproto::scc_info_KafkaMessage.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:GpssCluster.KafkaMessage)
 }
 KafkaMessage::KafkaMessage(const KafkaMessage& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   payload_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.payload().size() > 0) {
@@ -1324,6 +1474,8 @@ KafkaMessage::KafkaMessage(const KafkaMessage& from)
 }
 
 void KafkaMessage::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_KafkaMessage_stream_2eproto.base);
   payload_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -1341,13 +1493,8 @@ void KafkaMessage::SharedDtor() {
 void KafkaMessage::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* KafkaMessage::descriptor() {
-  ::protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const KafkaMessage& KafkaMessage::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_stream_2eproto::scc_info_KafkaMessage.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_KafkaMessage_stream_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1363,9 +1510,76 @@ void KafkaMessage::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* KafkaMessage::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<KafkaMessage*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // bytes Payload = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_payload();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // bytes Key = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool KafkaMessage::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:GpssCluster.KafkaMessage)
   for (;;) {
@@ -1375,8 +1589,7 @@ bool KafkaMessage::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // bytes Payload = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_payload()));
         } else {
@@ -1387,8 +1600,7 @@ bool KafkaMessage::MergePartialFromCodedStream(
 
       // bytes Key = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_key()));
         } else {
@@ -1416,6 +1628,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void KafkaMessage::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1435,16 +1648,15 @@ void KafkaMessage::SerializeWithCachedSizes(
       2, this->key(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:GpssCluster.KafkaMessage)
 }
 
 ::google::protobuf::uint8* KafkaMessage::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:GpssCluster.KafkaMessage)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1463,9 +1675,9 @@ void KafkaMessage::SerializeWithCachedSizes(
         2, this->key(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GpssCluster.KafkaMessage)
   return target;
@@ -1475,11 +1687,15 @@ size_t KafkaMessage::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:GpssCluster.KafkaMessage)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // bytes Payload = 1;
   if (this->payload().size() > 0) {
     total_size += 1 +
@@ -1503,9 +1719,9 @@ void KafkaMessage::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:GpssCluster.KafkaMessage)
   GOOGLE_DCHECK_NE(&from, this);
   const KafkaMessage* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const KafkaMessage>(
+      ::google::protobuf::DynamicCastToGenerated<KafkaMessage>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:GpssCluster.KafkaMessage)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1555,16 +1771,16 @@ void KafkaMessage::Swap(KafkaMessage* other) {
 }
 void KafkaMessage::InternalSwap(KafkaMessage* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   payload_.Swap(&other->payload_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   key_.Swap(&other->key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata KafkaMessage::GetMetadata() const {
-  protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_stream_2eproto);
+  return ::file_level_metadata_stream_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1572,26 +1788,30 @@ void KafkaMessage::InternalSwap(KafkaMessage* other) {
 
 void KafkaMessages::InitAsDefaultInstance() {
 }
+class KafkaMessages::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int KafkaMessages::kMessagesFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 KafkaMessages::KafkaMessages()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_stream_2eproto::scc_info_KafkaMessages.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:GpssCluster.KafkaMessages)
 }
 KafkaMessages::KafkaMessages(const KafkaMessages& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       messages_(from.messages_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:GpssCluster.KafkaMessages)
 }
 
 void KafkaMessages::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_KafkaMessages_stream_2eproto.base);
 }
 
 KafkaMessages::~KafkaMessages() {
@@ -1605,13 +1825,8 @@ void KafkaMessages::SharedDtor() {
 void KafkaMessages::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* KafkaMessages::descriptor() {
-  ::protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const KafkaMessages& KafkaMessages::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_stream_2eproto::scc_info_KafkaMessages.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_KafkaMessages_stream_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1626,9 +1841,58 @@ void KafkaMessages::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* KafkaMessages::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<KafkaMessages*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated .GpssCluster.KafkaMessage Messages = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::GpssCluster::KafkaMessage::_InternalParse;
+          object = msg->add_messages();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 10 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool KafkaMessages::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:GpssCluster.KafkaMessages)
   for (;;) {
@@ -1638,8 +1902,7 @@ bool KafkaMessages::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .GpssCluster.KafkaMessage Messages = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_messages()));
         } else {
@@ -1667,6 +1930,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void KafkaMessages::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1683,16 +1947,15 @@ void KafkaMessages::SerializeWithCachedSizes(
       output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:GpssCluster.KafkaMessages)
 }
 
 ::google::protobuf::uint8* KafkaMessages::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:GpssCluster.KafkaMessages)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1702,12 +1965,12 @@ void KafkaMessages::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->messages_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->messages(static_cast<int>(i)), deterministic, target);
+        1, this->messages(static_cast<int>(i)), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GpssCluster.KafkaMessages)
   return target;
@@ -1717,11 +1980,15 @@ size_t KafkaMessages::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:GpssCluster.KafkaMessages)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .GpssCluster.KafkaMessage Messages = 1;
   {
     unsigned int count = static_cast<unsigned int>(this->messages_size());
@@ -1742,9 +2009,9 @@ void KafkaMessages::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:GpssCluster.KafkaMessages)
   GOOGLE_DCHECK_NE(&from, this);
   const KafkaMessages* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const KafkaMessages>(
+      ::google::protobuf::DynamicCastToGenerated<KafkaMessages>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:GpssCluster.KafkaMessages)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1787,13 +2054,13 @@ void KafkaMessages::Swap(KafkaMessages* other) {
 }
 void KafkaMessages::InternalSwap(KafkaMessages* other) {
   using std::swap;
-  CastToBase(&messages_)->InternalSwap(CastToBase(&other->messages_));
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  CastToBase(&messages_)->InternalSwap(CastToBase(&other->messages_));
 }
 
 ::google::protobuf::Metadata KafkaMessages::GetMetadata() const {
-  protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_stream_2eproto);
+  return ::file_level_metadata_stream_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1801,27 +2068,29 @@ void KafkaMessages::InternalSwap(KafkaMessages* other) {
 
 void OffsetResponse::InitAsDefaultInstance() {
 }
+class OffsetResponse::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OffsetResponse::kOffsetFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OffsetResponse::OffsetResponse()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_stream_2eproto::scc_info_OffsetResponse.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:GpssCluster.OffsetResponse)
 }
 OffsetResponse::OffsetResponse(const OffsetResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   offset_ = from.offset_;
   // @@protoc_insertion_point(copy_constructor:GpssCluster.OffsetResponse)
 }
 
 void OffsetResponse::SharedCtor() {
-  offset_ = GOOGLE_LONGLONG(0);
+  offset_ = PROTOBUF_LONGLONG(0);
 }
 
 OffsetResponse::~OffsetResponse() {
@@ -1835,13 +2104,8 @@ void OffsetResponse::SharedDtor() {
 void OffsetResponse::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OffsetResponse::descriptor() {
-  ::protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OffsetResponse& OffsetResponse::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_stream_2eproto::scc_info_OffsetResponse.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OffsetResponse_stream_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1852,13 +2116,50 @@ void OffsetResponse::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  offset_ = GOOGLE_LONGLONG(0);
+  offset_ = PROTOBUF_LONGLONG(0);
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OffsetResponse::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OffsetResponse*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // int64 Offset = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_offset(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OffsetResponse::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:GpssCluster.OffsetResponse)
   for (;;) {
@@ -1868,8 +2169,7 @@ bool OffsetResponse::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // int64 Offset = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -1899,6 +2199,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OffsetResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1911,16 +2212,15 @@ void OffsetResponse::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->offset(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:GpssCluster.OffsetResponse)
 }
 
 ::google::protobuf::uint8* OffsetResponse::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:GpssCluster.OffsetResponse)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1930,9 +2230,9 @@ void OffsetResponse::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->offset(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GpssCluster.OffsetResponse)
   return target;
@@ -1942,11 +2242,15 @@ size_t OffsetResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:GpssCluster.OffsetResponse)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // int64 Offset = 1;
   if (this->offset() != 0) {
     total_size += 1 +
@@ -1963,9 +2267,9 @@ void OffsetResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:GpssCluster.OffsetResponse)
   GOOGLE_DCHECK_NE(&from, this);
   const OffsetResponse* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OffsetResponse>(
+      ::google::protobuf::DynamicCastToGenerated<OffsetResponse>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:GpssCluster.OffsetResponse)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2010,13 +2314,13 @@ void OffsetResponse::Swap(OffsetResponse* other) {
 }
 void OffsetResponse::InternalSwap(OffsetResponse* other) {
   using std::swap;
-  swap(offset_, other->offset_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(offset_, other->offset_);
 }
 
 ::google::protobuf::Metadata OffsetResponse::GetMetadata() const {
-  protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_stream_2eproto);
+  return ::file_level_metadata_stream_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2024,6 +2328,10 @@ void OffsetResponse::InternalSwap(OffsetResponse* other) {
 
 void StartRequest::InitAsDefaultInstance() {
 }
+class StartRequest::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StartRequest::kIDFieldNumber;
 const int StartRequest::kMaxTimeFieldNumber;
@@ -2031,15 +2339,13 @@ const int StartRequest::kRowsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StartRequest::StartRequest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_stream_2eproto::scc_info_StartRequest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:GpssCluster.StartRequest)
 }
 StartRequest::StartRequest(const StartRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.id().size() > 0) {
@@ -2052,6 +2358,8 @@ StartRequest::StartRequest(const StartRequest& from)
 }
 
 void StartRequest::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StartRequest_stream_2eproto.base);
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&rows_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&maxtime_) -
@@ -2070,13 +2378,8 @@ void StartRequest::SharedDtor() {
 void StartRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StartRequest::descriptor() {
-  ::protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StartRequest& StartRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_stream_2eproto::scc_info_StartRequest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StartRequest_stream_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2094,9 +2397,76 @@ void StartRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StartRequest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StartRequest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // string ID = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("GpssCluster.StartRequest.ID");
+        object = msg->mutable_id();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // int32 MaxTime = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_maxtime(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // int64 Rows = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_rows(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StartRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:GpssCluster.StartRequest)
   for (;;) {
@@ -2106,8 +2476,7 @@ bool StartRequest::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // string ID = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2122,8 +2491,7 @@ bool StartRequest::MergePartialFromCodedStream(
 
       // int32 MaxTime = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -2136,8 +2504,7 @@ bool StartRequest::MergePartialFromCodedStream(
 
       // int64 Rows = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -2167,6 +2534,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StartRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2194,16 +2562,15 @@ void StartRequest::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt64(3, this->rows(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:GpssCluster.StartRequest)
 }
 
 ::google::protobuf::uint8* StartRequest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:GpssCluster.StartRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2229,9 +2596,9 @@ void StartRequest::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(3, this->rows(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GpssCluster.StartRequest)
   return target;
@@ -2241,11 +2608,15 @@ size_t StartRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:GpssCluster.StartRequest)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // string ID = 1;
   if (this->id().size() > 0) {
     total_size += 1 +
@@ -2276,9 +2647,9 @@ void StartRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:GpssCluster.StartRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const StartRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StartRequest>(
+      ::google::protobuf::DynamicCastToGenerated<StartRequest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:GpssCluster.StartRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2330,16 +2701,16 @@ void StartRequest::Swap(StartRequest* other) {
 }
 void StartRequest::InternalSwap(StartRequest* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   id_.Swap(&other->id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(rows_, other->rows_);
   swap(maxtime_, other->maxtime_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StartRequest::GetMetadata() const {
-  protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_stream_2eproto);
+  return ::file_level_metadata_stream_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2347,20 +2718,22 @@ void StartRequest::InternalSwap(StartRequest* other) {
 
 void StopRequest::InitAsDefaultInstance() {
 }
+class StopRequest::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StopRequest::kIDFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StopRequest::StopRequest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_stream_2eproto::scc_info_StopRequest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:GpssCluster.StopRequest)
 }
 StopRequest::StopRequest(const StopRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.id().size() > 0) {
@@ -2370,6 +2743,8 @@ StopRequest::StopRequest(const StopRequest& from)
 }
 
 void StopRequest::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StopRequest_stream_2eproto.base);
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -2385,13 +2760,8 @@ void StopRequest::SharedDtor() {
 void StopRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StopRequest::descriptor() {
-  ::protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StopRequest& StopRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_stream_2eproto::scc_info_StopRequest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StopRequest_stream_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2406,9 +2776,62 @@ void StopRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StopRequest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StopRequest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // string ID = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("GpssCluster.StopRequest.ID");
+        object = msg->mutable_id();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StopRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:GpssCluster.StopRequest)
   for (;;) {
@@ -2418,8 +2841,7 @@ bool StopRequest::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // string ID = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2451,6 +2873,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StopRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2468,16 +2891,15 @@ void StopRequest::SerializeWithCachedSizes(
       1, this->id(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:GpssCluster.StopRequest)
 }
 
 ::google::protobuf::uint8* StopRequest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:GpssCluster.StopRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2493,9 +2915,9 @@ void StopRequest::SerializeWithCachedSizes(
         1, this->id(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GpssCluster.StopRequest)
   return target;
@@ -2505,11 +2927,15 @@ size_t StopRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:GpssCluster.StopRequest)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // string ID = 1;
   if (this->id().size() > 0) {
     total_size += 1 +
@@ -2526,9 +2952,9 @@ void StopRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:GpssCluster.StopRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const StopRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StopRequest>(
+      ::google::protobuf::DynamicCastToGenerated<StopRequest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:GpssCluster.StopRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2574,14 +3000,14 @@ void StopRequest::Swap(StopRequest* other) {
 }
 void StopRequest::InternalSwap(StopRequest* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   id_.Swap(&other->id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StopRequest::GetMetadata() const {
-  protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_stream_2eproto);
+  return ::file_level_metadata_stream_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2589,20 +3015,22 @@ void StopRequest::InternalSwap(StopRequest* other) {
 
 void DeleteRequest::InitAsDefaultInstance() {
 }
+class DeleteRequest::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int DeleteRequest::kIDFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 DeleteRequest::DeleteRequest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_stream_2eproto::scc_info_DeleteRequest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:GpssCluster.DeleteRequest)
 }
 DeleteRequest::DeleteRequest(const DeleteRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.id().size() > 0) {
@@ -2612,6 +3040,8 @@ DeleteRequest::DeleteRequest(const DeleteRequest& from)
 }
 
 void DeleteRequest::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_DeleteRequest_stream_2eproto.base);
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -2627,13 +3057,8 @@ void DeleteRequest::SharedDtor() {
 void DeleteRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* DeleteRequest::descriptor() {
-  ::protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const DeleteRequest& DeleteRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_stream_2eproto::scc_info_DeleteRequest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_DeleteRequest_stream_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2648,9 +3073,62 @@ void DeleteRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* DeleteRequest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<DeleteRequest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // string ID = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("GpssCluster.DeleteRequest.ID");
+        object = msg->mutable_id();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool DeleteRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:GpssCluster.DeleteRequest)
   for (;;) {
@@ -2660,8 +3138,7 @@ bool DeleteRequest::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // string ID = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2693,6 +3170,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void DeleteRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2710,16 +3188,15 @@ void DeleteRequest::SerializeWithCachedSizes(
       1, this->id(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:GpssCluster.DeleteRequest)
 }
 
 ::google::protobuf::uint8* DeleteRequest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:GpssCluster.DeleteRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2735,9 +3212,9 @@ void DeleteRequest::SerializeWithCachedSizes(
         1, this->id(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GpssCluster.DeleteRequest)
   return target;
@@ -2747,11 +3224,15 @@ size_t DeleteRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:GpssCluster.DeleteRequest)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // string ID = 1;
   if (this->id().size() > 0) {
     total_size += 1 +
@@ -2768,9 +3249,9 @@ void DeleteRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:GpssCluster.DeleteRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const DeleteRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const DeleteRequest>(
+      ::google::protobuf::DynamicCastToGenerated<DeleteRequest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:GpssCluster.DeleteRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2816,14 +3297,14 @@ void DeleteRequest::Swap(DeleteRequest* other) {
 }
 void DeleteRequest::InternalSwap(DeleteRequest* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   id_.Swap(&other->id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata DeleteRequest::GetMetadata() const {
-  protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_stream_2eproto);
+  return ::file_level_metadata_stream_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2831,20 +3312,22 @@ void DeleteRequest::InternalSwap(DeleteRequest* other) {
 
 void ConsumeRequest::InitAsDefaultInstance() {
 }
+class ConsumeRequest::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ConsumeRequest::kIDFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ConsumeRequest::ConsumeRequest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_stream_2eproto::scc_info_ConsumeRequest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:GpssCluster.ConsumeRequest)
 }
 ConsumeRequest::ConsumeRequest(const ConsumeRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.id().size() > 0) {
@@ -2854,6 +3337,8 @@ ConsumeRequest::ConsumeRequest(const ConsumeRequest& from)
 }
 
 void ConsumeRequest::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_ConsumeRequest_stream_2eproto.base);
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -2869,13 +3354,8 @@ void ConsumeRequest::SharedDtor() {
 void ConsumeRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* ConsumeRequest::descriptor() {
-  ::protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const ConsumeRequest& ConsumeRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_stream_2eproto::scc_info_ConsumeRequest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_ConsumeRequest_stream_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2890,9 +3370,62 @@ void ConsumeRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* ConsumeRequest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<ConsumeRequest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // string ID = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("GpssCluster.ConsumeRequest.ID");
+        object = msg->mutable_id();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ConsumeRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:GpssCluster.ConsumeRequest)
   for (;;) {
@@ -2902,8 +3435,7 @@ bool ConsumeRequest::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // string ID = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2935,6 +3467,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void ConsumeRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2952,16 +3485,15 @@ void ConsumeRequest::SerializeWithCachedSizes(
       1, this->id(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:GpssCluster.ConsumeRequest)
 }
 
 ::google::protobuf::uint8* ConsumeRequest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:GpssCluster.ConsumeRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2977,9 +3509,9 @@ void ConsumeRequest::SerializeWithCachedSizes(
         1, this->id(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GpssCluster.ConsumeRequest)
   return target;
@@ -2989,11 +3521,15 @@ size_t ConsumeRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:GpssCluster.ConsumeRequest)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // string ID = 1;
   if (this->id().size() > 0) {
     total_size += 1 +
@@ -3010,9 +3546,9 @@ void ConsumeRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:GpssCluster.ConsumeRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const ConsumeRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ConsumeRequest>(
+      ::google::protobuf::DynamicCastToGenerated<ConsumeRequest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:GpssCluster.ConsumeRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3058,14 +3594,14 @@ void ConsumeRequest::Swap(ConsumeRequest* other) {
 }
 void ConsumeRequest::InternalSwap(ConsumeRequest* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   id_.Swap(&other->id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata ConsumeRequest::GetMetadata() const {
-  protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_stream_2eproto);
+  return ::file_level_metadata_stream_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3073,20 +3609,22 @@ void ConsumeRequest::InternalSwap(ConsumeRequest* other) {
 
 void OffsetRequest::InitAsDefaultInstance() {
 }
+class OffsetRequest::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OffsetRequest::kIDFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OffsetRequest::OffsetRequest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_stream_2eproto::scc_info_OffsetRequest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:GpssCluster.OffsetRequest)
 }
 OffsetRequest::OffsetRequest(const OffsetRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.id().size() > 0) {
@@ -3096,6 +3634,8 @@ OffsetRequest::OffsetRequest(const OffsetRequest& from)
 }
 
 void OffsetRequest::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OffsetRequest_stream_2eproto.base);
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -3111,13 +3651,8 @@ void OffsetRequest::SharedDtor() {
 void OffsetRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OffsetRequest::descriptor() {
-  ::protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OffsetRequest& OffsetRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_stream_2eproto::scc_info_OffsetRequest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OffsetRequest_stream_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3132,9 +3667,62 @@ void OffsetRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OffsetRequest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OffsetRequest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // string ID = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("GpssCluster.OffsetRequest.ID");
+        object = msg->mutable_id();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OffsetRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:GpssCluster.OffsetRequest)
   for (;;) {
@@ -3144,8 +3732,7 @@ bool OffsetRequest::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // string ID = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3177,6 +3764,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OffsetRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3194,16 +3782,15 @@ void OffsetRequest::SerializeWithCachedSizes(
       1, this->id(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:GpssCluster.OffsetRequest)
 }
 
 ::google::protobuf::uint8* OffsetRequest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:GpssCluster.OffsetRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3219,9 +3806,9 @@ void OffsetRequest::SerializeWithCachedSizes(
         1, this->id(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GpssCluster.OffsetRequest)
   return target;
@@ -3231,11 +3818,15 @@ size_t OffsetRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:GpssCluster.OffsetRequest)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // string ID = 1;
   if (this->id().size() > 0) {
     total_size += 1 +
@@ -3252,9 +3843,9 @@ void OffsetRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:GpssCluster.OffsetRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const OffsetRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OffsetRequest>(
+      ::google::protobuf::DynamicCastToGenerated<OffsetRequest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:GpssCluster.OffsetRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3300,14 +3891,14 @@ void OffsetRequest::Swap(OffsetRequest* other) {
 }
 void OffsetRequest::InternalSwap(OffsetRequest* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   id_.Swap(&other->id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OffsetRequest::GetMetadata() const {
-  protobuf_stream_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_stream_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_stream_2eproto);
+  return ::file_level_metadata_stream_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3315,40 +3906,41 @@ void OffsetRequest::InternalSwap(OffsetRequest* other) {
 }  // namespace GpssCluster
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::GpssCluster::Empty* Arena::CreateMaybeMessage< ::GpssCluster::Empty >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::GpssCluster::Empty* Arena::CreateMaybeMessage< ::GpssCluster::Empty >(Arena* arena) {
   return Arena::CreateInternal< ::GpssCluster::Empty >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::GpssCluster::AddRequest* Arena::CreateMaybeMessage< ::GpssCluster::AddRequest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::GpssCluster::AddRequest* Arena::CreateMaybeMessage< ::GpssCluster::AddRequest >(Arena* arena) {
   return Arena::CreateInternal< ::GpssCluster::AddRequest >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::GpssCluster::AddResponse* Arena::CreateMaybeMessage< ::GpssCluster::AddResponse >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::GpssCluster::AddResponse* Arena::CreateMaybeMessage< ::GpssCluster::AddResponse >(Arena* arena) {
   return Arena::CreateInternal< ::GpssCluster::AddResponse >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::GpssCluster::KafkaMessage* Arena::CreateMaybeMessage< ::GpssCluster::KafkaMessage >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::GpssCluster::KafkaMessage* Arena::CreateMaybeMessage< ::GpssCluster::KafkaMessage >(Arena* arena) {
   return Arena::CreateInternal< ::GpssCluster::KafkaMessage >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::GpssCluster::KafkaMessages* Arena::CreateMaybeMessage< ::GpssCluster::KafkaMessages >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::GpssCluster::KafkaMessages* Arena::CreateMaybeMessage< ::GpssCluster::KafkaMessages >(Arena* arena) {
   return Arena::CreateInternal< ::GpssCluster::KafkaMessages >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::GpssCluster::OffsetResponse* Arena::CreateMaybeMessage< ::GpssCluster::OffsetResponse >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::GpssCluster::OffsetResponse* Arena::CreateMaybeMessage< ::GpssCluster::OffsetResponse >(Arena* arena) {
   return Arena::CreateInternal< ::GpssCluster::OffsetResponse >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::GpssCluster::StartRequest* Arena::CreateMaybeMessage< ::GpssCluster::StartRequest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::GpssCluster::StartRequest* Arena::CreateMaybeMessage< ::GpssCluster::StartRequest >(Arena* arena) {
   return Arena::CreateInternal< ::GpssCluster::StartRequest >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::GpssCluster::StopRequest* Arena::CreateMaybeMessage< ::GpssCluster::StopRequest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::GpssCluster::StopRequest* Arena::CreateMaybeMessage< ::GpssCluster::StopRequest >(Arena* arena) {
   return Arena::CreateInternal< ::GpssCluster::StopRequest >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::GpssCluster::DeleteRequest* Arena::CreateMaybeMessage< ::GpssCluster::DeleteRequest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::GpssCluster::DeleteRequest* Arena::CreateMaybeMessage< ::GpssCluster::DeleteRequest >(Arena* arena) {
   return Arena::CreateInternal< ::GpssCluster::DeleteRequest >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::GpssCluster::ConsumeRequest* Arena::CreateMaybeMessage< ::GpssCluster::ConsumeRequest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::GpssCluster::ConsumeRequest* Arena::CreateMaybeMessage< ::GpssCluster::ConsumeRequest >(Arena* arena) {
   return Arena::CreateInternal< ::GpssCluster::ConsumeRequest >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::GpssCluster::OffsetRequest* Arena::CreateMaybeMessage< ::GpssCluster::OffsetRequest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::GpssCluster::OffsetRequest* Arena::CreateMaybeMessage< ::GpssCluster::OffsetRequest >(Arena* arena) {
   return Arena::CreateInternal< ::GpssCluster::OffsetRequest >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

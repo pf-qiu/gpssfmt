@@ -16,15 +16,17 @@
 
 GRPCC := $(shell pkg-config --cflags protobuf grpc)
 JSONC := -I/home/gpadmin/rapidjson/include
-LDFLAGS := $(shell pkg-config --libs protobuf grpc++ grpc) -ldl\
+KAFKAC := $(shell pkg-config --cflags rdkafka)
+LDFLAGS := $(shell pkg-config --libs rdkafka protobuf grpc++ grpc) -ldl\
 	-Wl,--no-as-needed -lgrpc++_reflection -Wl,--as-needed\
 
 MYLDFLAGS := $(LDFLAGS)
+
 MODULE_big = gpssfmt
 OBJS       = gpssfmt.o stream.grpc.pb.o stream.pb.o interface.o
 
 SHLIB_LINK += $(shell pkg-config --libs protobuf grpc++ grpc)
-PG_CPPFLAGS = -I$(libpq_srcdir) $(GRPCC) $(JSONC) -fPIC
+PG_CPPFLAGS = -I$(libpq_srcdir) $(GRPCC) $(JSONC) $(KAFKAC) -fPIC
 PG_LIBS = $(libpq_pgport)
 
 PG_CONFIG = pg_config
@@ -35,5 +37,7 @@ client: stream.pb.o stream.grpc.pb.o client.o
 	$(CXX) $(CFLAGS) $^ $(MYLDFLAGS) -o $@
 
 worker: stream.pb.o stream.grpc.pb.o worker.o
-	$(CXX) $(CFLAGS) $^ $(MYLDFLAGS) -o $@ -lrdkafka
-
+	@echo hello $(RDKAFKA_FLAGS)
+	$(CXX) $(CFLAGS) $^ $(MYLDFLAGS) -o $@
+proto:
+	protoc --cpp_out=. --grpc_out=. --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` stream.proto
